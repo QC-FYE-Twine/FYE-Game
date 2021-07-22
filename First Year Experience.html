@@ -10,59 +10,92 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play First Year Experience.</tw-noscript></noscript></tw-story>
 <tw-storydata name="First Year Experience" startnode="1" creator="Twine" creator-version="2.3.14" ifid="49C9114B-F456-4033-92EA-3DE4E7AE5344" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
-	background-color: #294429;
-}
-
-.name{
-  font-style:bold;
-  font-family:Helvetica;
+  background-color: white;
 }
 
 .scenario{
   font-family:Garamond;
-  color:#539bfa;
+  color:#990033;
 }
 
-.choices{
+.blackboard_message{
+  color:black;
+  font-family:Monospace;
+  text-align:center;
+  display:block;
+  padding:15px;
+}
+
+.email-format{
+  font-family:Arial;
+}
+
+.choices tw-link{
+  text-align:center;
   font-family:Helvetica;
+  color: #ff5050;
 }
 
 a{
-  font-family:Helvetica;
-  color:#7600A8;
+  font-family:Europa;
+  color:#cc0000;
 }
 
 img{
-  width=90%;
+  width:90%;
+  margin:0;
   display:block;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="How to find student charges and make payment?" tags="charges" position="266,230" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/b9/0d/4d/b90d4d3f6571e1f3a207541be8dc5963.png&quot;&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="How to find student charges and make payment?" tags="charges" position="266,230" size="100,100">&lt;img src=&quot;https://images.unsplash.com/photo-1603726477468-da922b12b8ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1248&amp;q=80&quot; alt=&quot;Bedroom at night&quot;&gt;
 
 &lt;p class=&quot;scenario&quot;&gt;Summer vacation is almost over. It was fun while it lasted, but it&#39;s time to shift back into school-mode— especially since it&#39;s your first year at Queens College.
 
 You have everything prepared.
 
-Wait! Tuition! You can&#39;t remember if all the financial stuff has been handled yet. Where do you check for this information? More importantly, where do you make a payment?&lt;/p&gt;
+Wait! 
 
+Tuition! You can&#39;t remember if all the financial stuff has been handled yet. Where do you check for this information? More importantly, where do you make a payment?&lt;/p&gt;
 &lt;span class=&quot;choices&quot;&gt;
 	[[Use CUNY QuikPay]]
 	[[Visit the Bursar Office]]
 	[[Let my scholarships/aid handle it]]
 &lt;/span&gt;</tw-passagedata><tw-passagedata pid="2" name="Use CUNY QuikPay" tags="" position="114,380" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Fortunately, &lt;style:&quot;font-style=Helvetica&quot;&gt;CUNYFirst&lt;/&gt; allows you to easily pay online with credit card or E-Check (//electronic fund transfer//)!
 
-All you need to do is log into &lt;a href=&quot;https://ssologin.cuny.edu/cuny.html?resource_url=https%3A%2F%2Fhome.cunyfirst.cuny.edu%252Fpsp%252Fcnyepprd%252FEMPLOYEE%252FEMPL%252Fh%252F%3Ftab%253DDEFAULT&quot; target=&quot;_blank&quot;&gt;CUNYFirst&lt;/a&gt;, scroll down to //Finances//, click &#39;&#39;Make a payment&#39;&#39;, and enter your information to authorize payment of the required [[amount]].&lt;/p&gt;</tw-passagedata><tw-passagedata pid="3" name="Visit the Bursar Office" tags="" position="266,380" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/admissions/bursar/PublishingImages/cam_00099_L1.jpg&quot;&gt;
+All you need to do is log into &lt;a href=&quot;https://ssologin.cuny.edu/cuny.html?resource_url=https%3A%2F%2Fhome.cunyfirst.cuny.edu%252Fpsp%252Fcnyepprd%252FEMPLOYEE%252FEMPL%252Fh%252F%3Ftab%253DDEFAULT&quot; target=&quot;_blank&quot;&gt;CUNYFirst&lt;/a&gt;, scroll down to //Finances//, click &#39;&#39;Make a payment&#39;&#39;, and enter your information to authorize payment of the required &lt;span class=&quot;choices&quot;&gt;[[amount]].&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="3" name="Visit the Bursar Office" tags="" position="266,380" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/admissions/bursar/PublishingImages/cam_00099_L1.jpg&quot; alt=&quot;Jefferson Hall on Queens College campus&quot;&gt;
 &lt;p class=&quot;scenario&quot;&gt;The Bursar Office is conveniently located in Queens College&#39;s &#39;&#39;Jefferson Hall&#39;&#39;. However, to save you the walk, the Bursar Office also offers assistance via &lt;a href=&quot;https://www.qc.cuny.edu/admissions/bursar/Pages/Staff-Contact-Info.aspx&quot; target=&quot;_blank&quot;&gt;telephone and email&lt;/a&gt;.
 
-The Bursar Office operates on weekdays from 9AM to 5PM to answer questions and concerns about students&#39; accounts and [[amounts|amount]] owed.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="4" name="Let my scholarships/aid handle it" tags="" position="416,380" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Luckily, an organization or the government is endorsing your education. The weight on your shoulders doesn&#39;t feel as heavy.
+The Bursar Office operates on weekdays from 9AM to 5PM to answer questions and concerns about students&#39; accounts and &lt;span class=&quot;choices&quot;&gt;[[amounts|amount]]&lt;/span&gt; owed.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="4" name="Let my scholarships/aid handle it" tags="" position="416,380" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Luckily, an organization or the government is endorsing your education. The weight on your shoulders doesn&#39;t feel as heavy.
 
-However, &lt;a href=&quot;https://qc-cuny.academicworks.com/opportunities&quot; target=&quot;_blank&quot;&gt;applying&lt;/a&gt; for more aid [[wouldn&#39;t hurt]].&lt;/p&gt;</tw-passagedata><tw-passagedata pid="5" name="amount" tags="" position="116,530" size="100,100">&lt;img src = &quot;https://www.qc.cuny.edu/StudentLife/services/qchub/PublishingImages/banner_top_hub-1.jpg&quot;&gt;
+However, &lt;a href=&quot;https://qc-cuny.academicworks.com/opportunities&quot; target=&quot;_blank&quot;&gt;applying&lt;/a&gt; for more aid &lt;span class=&quot;choices&quot;&gt;[[wouldn&#39;t hurt]].&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="5" name="amount" tags="" position="116,530" size="100,100">&lt;img src = &quot;https://www.qc.cuny.edu/StudentLife/services/qchub/PublishingImages/banner_top_hub-1.jpg&quot; alt=&quot;QC Hub banner logo&quot;&gt;
 
 &lt;p class=&quot;scenario&quot;&gt;For further inquiries and assistance, the QC Hub is always available!
 
-You may email //QChub@qc.cuny.edu// or &lt;a href=&quot;https://chat.qc.cuny.edu/UserPreChat.aspx?ref=https%3a%2f%2fwww.qc.cuny.edu%2f&amp;d=16&amp;u=&amp;bypass=&quot; target=&quot;_blank&quot;&gt;chat online&lt;/a&gt; or request an appointment between 9AM-5PM on weekdays.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="6" name="wouldn&#39;t hurt" tags="" position="416,530" size="100,100">&lt;img src=&quot;https://www.gannett-cdn.com/presto/2020/10/01/USAT/241ccf97-077d-4a66-88cd-66fb050f9a34-a01_taxes_1220.JPG?crop=5183,2916,x0,y263&amp;width=3200&amp;height=1801&amp;format=pjpg&amp;auto=webp&quot;&gt;
+The QC Hub works with students on issues in their accounts, and eases navigation within the financial department.
 
+You may email &lt;span class=&quot;email-format&quot;&gt;QChub@qc.cuny.edu&lt;/span&gt;
+or &lt;a href=&quot;https://chat.qc.cuny.edu/UserPreChat.aspx?ref=https%3a%2f%2fwww.qc.cuny.edu%2f&amp;d=16&amp;u=&amp;bypass=&quot; target=&quot;_blank&quot;&gt;chat online&lt;/a&gt; 
+or request an appointment between 9AM-5PM on weekdays.&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;[[You&#39;ll keep this in mind!|Where to buy textbooks and supplies?]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="6" name="wouldn&#39;t hurt" tags="" position="416,530" size="100,100">&lt;img src=&quot;https://www.photos-public-domain.com/wp-content/uploads/2017/04/irs-tax-form.jpg&quot; alt=&quot;Tax forms&quot;&gt;
 &lt;p class=&quot;scenario&quot;&gt;To maximize your benefits, apply for financial aid every academic year as early as possible! Have your documents prepared and research &lt;a href=&quot;https://finaid.org/&quot; target=&quot;_blank&quot;&gt;options&lt;/a&gt; that work best for your situation.
 
-You may end up paying nothing, or cover a small [[amount]].&lt;/p&gt;</tw-passagedata></tw-storydata>
+You may end up paying nothing, or covering a small &lt;span class=&quot;choices&quot;&gt;[[amount]]&lt;/span&gt;.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="7" name="Where to buy textbooks and supplies?" tags="" position="116,680" size="100,100">&lt;p class=&quot;scenario&quot;&gt;With tuition out of the way, you grab your cell phone and check your emails.
+
+You skim through the Queens College President&#39;s welcome email. You delete a now-expired Dunkin&#39; Donuts coupon.
+
+A loud notification goes off, and you tap on a new Blackboard message from one of the professors you&#39;ll be taking:
+
+(b4r:&quot;solid&quot;)+(b4r-size:2)+(b4r-colour:black)[&lt;span class=&quot;blackboard_message&quot;&gt;Welcome to the new semester, students! As stated in the syllabus, my class follows the textbook &lt;strong&gt;Precalculus: Mathematics For Calculus&lt;/strong&gt;. The latest edition is not necessary, just purchase any edition from the past 3 years and it&#39;s remotely the same. See you tomorrow!&lt;/span&gt;]
+
+
+Where do you search for this textbook?&lt;/p&gt;
+&lt;span class=&quot;choices&quot;&gt;
+[[Browse the Queens College Online Bookstore]]
+[[Check on Facebook Marketplace]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="8" name="Browse the Queens College Online Bookstore" tags="" position="41,830" size="100,100">&lt;p class=&quot;scenario&quot;&gt;You log into the online bookstore with your CUNYFirst credentials and the site refreshes, presenting you a personalized list of textbooks required from all of your classes.
+
+The &lt;a href=&quot;https://qc.textbookx.com/institutional/index.php&quot; target=&quot;_blank&quot;&gt;Queens College Online Bookstore&lt;/a&gt; offers a large variety of textbooks at lower prices than competing textbook sites. You may &lt;span class=&quot;choices&quot;&gt;[[purchase]]&lt;/span&gt; books used or new, or even rent them for some time.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="9" name="Check on Facebook Marketplace" tags="" position="191,830" size="100,100">&lt;p class=&quot;scenario&quot;&gt;There&#39;s almost always third-party sellers online! Most of the time, their listings are within your budget. However, it&#39;s difficult to determine the seller&#39;s reliability, or trust that what they&#39;re trying to sell you is the real deal.
+
+To guarantee quality and maintain affordability, you may visit &lt;span class=&quot;choices&quot;&gt;[[The Queens College Online Bookstore|Browse the Queens College Online Bookstore]]&lt;/span&gt; for textbooks and supplies.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="10" name="purchase" tags="" position="41,980" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
