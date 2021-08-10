@@ -13,6 +13,15 @@
   background-color: #662200 ;
 }
 
+tw-hook[name="fade-in"] {
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-fill-mode: both;
+	animation-name: fade-in;
+	animation-duration: 10s;
+	animation-fill-mode: both;
+}
+
 .scenario{
   font-family:Garamond;
   color:white ;
@@ -52,22 +61,25 @@ img{
 
 You have everything prepared.
 
-Wait! 
+(transition:&quot;fade&quot;)+(transition-delay:6s)[Wait!]
 
-Tuition! You can&#39;t remember if all the financial stuff has been handled yet. Where do you check for this information? More importantly, where do you make a payment?&lt;/p&gt;
+(transition:&quot;fade&quot;)+(transition-delay:7.2s)[Tuition! You can&#39;t remember if all the financial stuff has been handled yet. Where do you check for this information? More importantly, where do you make a payment?&lt;/p&gt;
 &lt;span class=&quot;choices&quot;&gt;
 	[[Use CUNY QuikPay]]
 	[[Visit the Bursar Office]]
 	[[Let my scholarships/aid handle it]]
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="2" name="Use CUNY QuikPay" tags="" position="114,380" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Fortunately, &lt;style:&quot;font-style=Helvetica&quot;&gt;CUNYFirst&lt;/&gt; allows you to easily pay online with credit card or E-Check (//electronic fund transfer//)!
+&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="2" name="Use CUNY QuikPay" tags="" position="114,380" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Fortunately, &lt;style:&quot;font-style=Helvetica&quot;&gt;CUNYFirst&lt;/&gt; allows you to easily pay online with credit card or E-Check (//electronic fund transfer//)!
 
-All you need to do is log into &lt;a href=&quot;https://ssologin.cuny.edu/cuny.html?resource_url=https%3A%2F%2Fhome.cunyfirst.cuny.edu%252Fpsp%252Fcnyepprd%252FEMPLOYEE%252FEMPL%252Fh%252F%3Ftab%253DDEFAULT&quot; target=&quot;_blank&quot;&gt;CUNYFirst&lt;/a&gt;, scroll down to //Finances//, click &#39;&#39;Make a payment&#39;&#39;, and enter your information to authorize payment of the required &lt;span class=&quot;choices&quot;&gt;[[amount]].&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="3" name="Visit the Bursar Office" tags="" position="266,380" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/admissions/bursar/PublishingImages/cam_00099_L1.jpg&quot; alt=&quot;Jefferson Hall on Queens College campus&quot;&gt;
+All you need to do is log into &lt;a href=&quot;https://ssologin.cuny.edu/cuny.html?resource_url=https%3A%2F%2Fhome.cunyfirst.cuny.edu%252Fpsp%252Fcnyepprd%252FEMPLOYEE%252FEMPL%252Fh%252F%3Ftab%253DDEFAULT&quot; target=&quot;_blank&quot;&gt;CUNYFirst&lt;/a&gt;, 
+scroll down to //Finances//, 
+click &#39;&#39;Make a payment&#39;&#39;, 
+and enter your information to authorize payment of the required &lt;span class=&quot;choices&quot;&gt;[[amount]].&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="3" name="Visit the Bursar Office" tags="" position="266,380" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/admissions/bursar/PublishingImages/cam_00099_L1.jpg&quot; alt=&quot;Jefferson Hall on Queens College campus&quot;&gt;
 
 &lt;p class=&quot;scenario&quot;&gt;The Bursar Office is conveniently located in Queens College&#39;s &#39;&#39;Jefferson Hall&#39;&#39;. However, to save you the walk, the Bursar Office also offers assistance via &lt;a href=&quot;https://www.qc.cuny.edu/admissions/bursar/Pages/Staff-Contact-Info.aspx&quot; target=&quot;_blank&quot;&gt;telephone and email&lt;/a&gt;.
 
 The Bursar Office operates on weekdays from 9AM to 5PM to answer questions and concerns about students&#39; accounts and &lt;span class=&quot;choices&quot;&gt;[[amounts|amount]]&lt;/span&gt; owed.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="4" name="Let my scholarships/aid handle it" tags="" position="416,380" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Luckily, an organization or the government is endorsing your education. The weight on your shoulders doesn&#39;t feel as heavy.
 
-However, &lt;a href=&quot;https://qc-cuny.academicworks.com/opportunities&quot; target=&quot;_blank&quot;&gt;applying&lt;/a&gt; for more aid &lt;span class=&quot;choices&quot;&gt;[[wouldn&#39;t hurt]].&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="5" name="amount" tags="" position="116,530" size="100,100">&lt;img src = &quot;https://www.qc.cuny.edu/StudentLife/services/qchub/PublishingImages/banner_top_hub-1.jpg&quot; alt=&quot;QC Hub banner logo&quot;&gt;
+(transition:&quot;fade&quot;)+(transition-delay:3s)[However, &lt;a href=&quot;https://qc-cuny.academicworks.com/opportunities&quot; target=&quot;_blank&quot;&gt;applying&lt;/a&gt; for more aid &lt;span class=&quot;choices&quot;&gt;[[wouldn&#39;t hurt]].&lt;/span&gt;]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="5" name="amount" tags="" position="116,530" size="100,100">&lt;img src = &quot;https://www.qc.cuny.edu/StudentLife/services/qchub/PublishingImages/banner_top_hub-1.jpg&quot; alt=&quot;QC Hub banner logo&quot;&gt;
 
 &lt;p class=&quot;scenario&quot;&gt;For further inquiries and assistance, the QC Hub is always available!
 
@@ -84,22 +96,24 @@ You may end up paying nothing, or covering a small &lt;span class=&quot;choices&
 
 You skim through the Queens College President&#39;s welcome email. You delete a now-expired Dunkin&#39; Donuts coupon.
 
-A loud notification goes off, and you tap on a new Blackboard message from one of the professors you&#39;ll be taking:
+[A loud notification goes off, and you tap on a new Blackboard message from one of the professors you&#39;ll be taking:]
 
-(b4r:&quot;solid&quot;)+(b4r-size:2)+(b4r-colour:white)[&lt;span class=&quot;blackboard_message&quot;&gt;Welcome to the new semester, students! As stated in the syllabus, my class follows the textbook &lt;strong&gt;Precalculus: Mathematics For Calculus&lt;/strong&gt;. The latest edition is not necessary, just purchase any edition from the past 3 years and it&#39;s remotely the same. See you tomorrow!&lt;/span&gt;]
+(transition:&quot;fade&quot;)+(transition-delay:6s)[(b4r:&quot;solid&quot;)+(b4r-size:2)+(b4r-colour:white)[&lt;span class=&quot;blackboard_message&quot;&gt;Welcome to the new semester, students! As stated in the syllabus, my class follows the textbook &lt;strong&gt;Precalculus: Mathematics For Calculus&lt;/strong&gt;. The latest edition is not necessary, just purchase any edition from the past 3 years and it&#39;s remotely the same. See you tomorrow!&lt;/span&gt;]]
 
-
+(transition:&quot;fade&quot;)+(transition-delay:11.5s)[
 Where do you search for this textbook?&lt;/p&gt;
 &lt;span class=&quot;choices&quot;&gt;
 [[Browse the Queens College Online Bookstore]]
 [[Check on Facebook Marketplace]]
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="8" name="Browse the Queens College Online Bookstore" tags="" position="167,814" size="100,100">&lt;p class=&quot;scenario&quot;&gt;You log into the online bookstore with your CUNYFirst credentials and the site refreshes, presenting you with a personalized list of textbooks required from all of your classes.
+&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="8" name="Browse the Queens College Online Bookstore" tags="" position="167,814" size="100,100">&lt;img src=&quot;https://i.imgur.com/vx7hIOr.png&quot; alt=&quot;Front page of QC Online Bookstore&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;You log into the online bookstore with your CUNYFirst credentials and the site refreshes, presenting you with a personalized list of textbooks required from all of your classes.
 
 The &lt;a href=&quot;https://qc.textbookx.com/institutional/index.php&quot; target=&quot;_blank&quot;&gt;Queens College Online Bookstore&lt;/a&gt; offers a large variety of textbooks at lower prices than competing textbook sites. You may &lt;span class=&quot;choices&quot;&gt;[[purchase|Need money. Where to get job/internship?]]&lt;/span&gt; books used or new, or even rent them for some time.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="9" name="Check on Facebook Marketplace" tags="" position="385,817" size="100,100">&lt;p class=&quot;scenario&quot;&gt;There&#39;s almost always third-party sellers online! Most of the time, their listings are within your budget. However, it&#39;s difficult to determine the seller&#39;s reliability, or trust that what they&#39;re trying to sell you is the real deal.
 
-To guarantee quality and maintain affordability, you may visit &lt;span class=&quot;choices&quot;&gt;[[The Queens College Online Bookstore|Browse the Queens College Online Bookstore]]&lt;/span&gt; for textbooks and supplies.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="10" name="Need money. Where to get job/internship?" tags="" position="283,958" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Nobody was lying when they said college is expensive. Although you&#39;ve taken care of tuition and textbooks for this semester, you can&#39;t help but think ahead to later semesters and how you&#39;ll pay for those.
+(transition:&quot;fade&quot;)+(transition-delay:4s)[To guarantee quality and maintain affordability, you may visit &lt;span class=&quot;choices&quot;&gt;[[The Queens College Online Bookstore|Browse the Queens College Online Bookstore]]&lt;/span&gt; for textbooks and supplies.&lt;/p&gt;]</tw-passagedata><tw-passagedata pid="10" name="Need money. Where to get job/internship?" tags="" position="283,958" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Nobody was lying when they said college is expensive. Although you&#39;ve taken care of tuition and textbooks for this semester, you can&#39;t help but think ahead to later semesters and how you&#39;ll pay for those.
 
-The idea of working as a front desk assistant at the Academic Advisement Center sounds interesting. So does wearing a hat and apron at the Starbucks on campus.
+The idea of working as a front desk assistant at the Academic Advising Center sounds interesting. So does wearing a hat and apron at the Starbucks on campus.
 
 Where do you look for a job?&lt;/p&gt;
 
@@ -107,7 +121,9 @@ Where do you look for a job?&lt;/p&gt;
 [[CUNY Service Corps]]
 [[Check on HireQC]]
 [[Nowhere- I&#39;ll worry about it later]]
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="11" name="CUNY Service Corps" tags="" position="133,1108" size="100,100">&lt;p class=&quot;scenario&quot;&gt;CUNY Service Corps partners with community organizations and facilities to provide CUNY students the opportunity to hone their skills with an enriching city project. Organizations select students with potential in the job and provide compensation for their work. Simultaneously, students learn professional etiquette and receive career insight.
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="11" name="CUNY Service Corps" tags="" position="133,1108" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/community/CUNY-Service-Corps/PublishingImages/CUNY_Service_Corps_656.jpg&quot; alt=&quot;CUNY Service Corps workers&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;CUNY Service Corps partners with community organizations and facilities to provide CUNY students the opportunity to hone their skills with an enriching city project. Organizations select students with potential in the job and provide compensation for their work. Simultaneously, students learn professional etiquette and receive career insight.
 
 Accepting applications on a rolling basis, you may email the Queens College branch at &lt;a href = &quot;mailto: ServiceCorps@qc.cuny.edu&quot; class=&quot;email-format&quot; target=&quot;_blank&quot;&gt;ServiceCorps@qc.cuny.edu&lt;/a&gt;
 
@@ -115,49 +131,167 @@ or &lt;a href = &quot;mailto: servicecorps@cuny.edu&quot; class=&quot;email-form
 
 or call &lt;a href=&quot;tel:+17185700565&quot;&gt;718-570-0565&lt;/a&gt;&lt;/p&gt;
 
-&lt;span class=&quot;choices&quot;&gt;[[What if I want to see job postings?|Check on HireQC]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="12" name="Check on HireQC" tags="" position="283,1204" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Available on desktop and mobile devices, &lt;a href = &quot;https://queenscollege-csm.symplicity.com/students/?signin_tab=0&quot; target=&quot;_blank&quot;&gt;HireQC&lt;/a&gt; is an intuitive job search resource exclusively for Queens College students.
+&lt;span class=&quot;choices&quot;&gt;[[What if I want to see job postings?|Check on HireQC]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="12" name="Check on HireQC" tags="" position="283,1204" size="100,100">&lt;img src=&quot;https://i.imgur.com/LCfW6F8.png&quot; alt=&quot;Front page of HireQC&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;Available on desktop and mobile devices, &lt;a href = &quot;https://queenscollege-csm.symplicity.com/students/?signin_tab=0&quot; target=&quot;_blank&quot;&gt;HireQC&lt;/a&gt; is an intuitive job search resource exclusively for Queens College students.
 
 Simply log in with your Queens College CAMS credentials and fill out a questionnaire for your profile. Your interests and preferences allow the algorithm to narrow down the most relevant job postings for you. You may upload resumes, cover letters, and unofficial transcripts to promote yourself to employers and &lt;span class=&quot;choices&quot;&gt;[[recruiters|Class begins. Find study buddy?]]&lt;/span&gt;.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="13" name="Nowhere- I&#39;ll worry about it later" tags="" position="433,1108" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Attending college is already a huge commitment. You&#39;ll pace yourself this semester, so you&#39;ll stick to studying for now and worry about working later on.
 
-Whenever that time comes— in the summer or in the farther future, there&#39;s &lt;span class=&quot;choices&quot;&gt;[[opportunities|Check on HireQC]]&lt;/span&gt; for everybody at Queens College.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="14" name="Class begins. Find study buddy?" tags="" position="283,1354" size="100,100">&lt;p class=&quot;scenario&quot;&gt;You scroll through endless job listings on HireQC, bookmarking the ones that interest you most.
+(transition:&quot;fade&quot;)+(transition-delay:3s)[Whenever that time comes— in the summer or in the farther future, there&#39;s &lt;span class=&quot;choices&quot;&gt;[[opportunities|Check on HireQC]]&lt;/span&gt; for everybody at Queens College.&lt;/p&gt;]</tw-passagedata><tw-passagedata pid="14" name="Class begins. Find study buddy?" tags="" position="283,1354" size="100,100">&lt;p class=&quot;scenario&quot;&gt;You scroll through endless job listings on HireQC, bookmarking the ones that interest you most.
 
 It is 1:30AM, and you don&#39;t realize how exhausted you are until you finally drift off to sleep, phone still in hand.
 
-The sleepiness carries into the morning, during your first class of the semester. Your professor stands behind the podium at the front of the classroom, reminding students to purchase the textbook ASAP. 
+(transition:&quot;fade&quot;)+(transition-delay:6s)[The sleepiness carries into the morning, during your first class of the semester. Your professor stands behind the podium at the front of the classroom, reminding students to purchase the textbook ASAP.]
 
-You&#39;ve already taken care of that.
+(transition:&quot;fade&quot;)+(transition-delay:11s)[You&#39;ve already taken care of that.]
 
-Concluding her rundown of the course, the professor dismisses class and advises everybody to study diligently for the next weeks.
+(transition:&quot;fade&quot;)+(transition-delay:13s)[Concluding her rundown of the course, the professor dismisses class and advises everybody to study diligently for the next weeks.
 
 Around you, students rise from their desks and file out of the room. You yawn and shake the grogginess off your mind. Now would be a good time to get a study buddy for this class.&lt;/p&gt;
 
 &lt;span class=&quot;choices&quot;&gt;
 [[Talk to the person next you]]
 [[But I&#39;ll be fine on my own!]]
-[[Study with FYE Mentor]]
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="15" name="Talk to the person next you" tags="" position="133,1504" size="100,100">&lt;p class=&quot;scenario&quot;&gt;The young man shoves his belongings into his backpack as you introduce yourself. He hoists his messenger bag strap onto his shoulder and you walk alongside him into the hallway.
+(set: $lastVisited to &quot;Class begins. Find study buddy?&quot;)[[Study with FYE Mentor]]
+&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="15" name="Talk to the person next you" tags="" position="133,1504" size="100,100">&lt;p class=&quot;scenario&quot;&gt;The young man shoves his belongings into his backpack as you introduce yourself. He hoists his messenger bag strap onto his shoulder and you walk alongside him into the hallway.
 
 It turns out that Rafael is a first year-student as well, and knowing that now eases your nerves a little bit. He enthuses about some mobile app he&#39;s been using to keep track of his school records and find other students in his classes.&lt;/p&gt;
 
-&lt;span class=&quot;choices&quot;&gt;[[Rafael holds out his phone so you could see for yourself|QC Navigate]].&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="Study with FYE Mentor" tags="" position="433,1504" size="100,100">&lt;p class=&quot;scenario&quot;&gt;The First Year Experience provides first year and transfer students with tools to have a successful college career. Its Peer Mentor program offers 1-on-1 guidance on various academic matters: exam preparation, major and minor inquiries, and schedule organization.
+&lt;span class=&quot;choices&quot;&gt;[[Rafael holds out his phone so you could see for yourself|QC Navigate]].&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="Study with FYE Mentor" tags="" position="433,1504" size="100,100">&lt;p class=&quot;scenario&quot;&gt;&lt;a href=&quot;http://fye.qc.cuny.edu/&quot; target=&quot;_blank&quot;&gt;The First Year Experience&lt;/a&gt; provides first year and transfer students with tools to have a successful college career. Its Peer Mentor program offers 1-on-1 guidance on various academic matters: exam preparation, major and minor inquiries, and schedule organization.
 
-To make an appointment with a Mentor, email &lt;a href = &quot;mailto: fye@qc.cuny.edu&quot; class=&quot;email-format&quot; target=&quot;_blank&quot;&gt;fye@qc.cuny.edu&lt;/a&gt;
+To make an appointment with a Mentor, email &lt;a href = &quot;mailto: fye@qc.cuny.edu&quot; class=&quot;email-format&quot; target=&quot;_blank&quot; class=&quot;email-format&quot;&gt;fye@qc.cuny.edu&lt;/a&gt;
 
 or attend office hours on &lt;a href=&quot;https://cuny.zoom.us/j/89048085966&quot; target=&quot;_blank&quot;&gt;Zoom&lt;/a&gt; between 11AM-1PM on Monday-Thursday
 
-or go on &lt;span class=&quot;choices&quot;&gt;[[QC Navigate]]&lt;span&gt;&lt;/p&gt;.</tw-passagedata><tw-passagedata pid="17" name="But I&#39;ll be fine on my own!" tags="" position="287,1509" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Study groups aren&#39;t really your thing. Any grade you get in this class or any topic you find yourself struggling with, you&#39;ll hold yourself accountable for.
+(if:$lastVisited is &quot;Class begins. Find study buddy?&quot;)[or go on &lt;span class=&quot;choices&quot;&gt;[[QC Navigate]].&lt;/span&gt;&lt;/p&gt;]
+
+(if:$lastVisited is &quot;Interested in major/minor?&quot;)[&lt;span class=&quot;choices&quot;&gt;[[Consider Peer Mentor&#39;s advice and make decision|Major Declaration Form]]&lt;/span&gt;&lt;/p&gt;]
+
+(if:$lastVisited is &quot;Major Declaration Form&quot;)[&lt;span class=&quot;choices&quot;&gt;[[Fill up my enrollment shopping cart|Enrollment]]&lt;/span&gt;&lt;/p&gt;]</tw-passagedata><tw-passagedata pid="17" name="But I&#39;ll be fine on my own!" tags="" position="287,1509" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Study groups aren&#39;t really your thing. Any grade you get in this class or any topic you find yourself struggling with, you&#39;ll hold yourself accountable for.
 
 If anything, you&#39;ll resolve to consulting your professor because she knows best.
 
-You exit the classroom and walk down the hallway. You pass by groups of students dapping each other up after the long semester break. They discuss how they&#39;d spent their time off until one girl mentions her &quot;go-to app for QC stuff.&quot;
+(transition:&quot;fade&quot;)+(transition-delay:7s)[You exit the classroom and walk down the hallway. You pass by groups of students dapping each other up after the long semester break. They discuss how they&#39;d spent their time off until one girl mentions her &quot;go-to app for QC stuff.&quot;
 
-You could mind your own business, but oddly enough, &lt;span class=&quot;choices&quot;&gt;[[the app sounds like it could be a helpful tool for you|QC Navigate]]&lt;/span&gt;.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="18" name="QC Navigate" tags="" position="290,1689" size="100,100">&lt;p class=&quot;scenario&quot;&gt;A holistic desktop and mobile app, &lt;a href=&quot;https://qc-cuny.navigate.eab.com/app/#/authentication/remote/&quot; target=&quot;_blank&quot;&gt;QC Navigate&lt;/a&gt; is connected to students&#39; CUNYFirst accounts and presents users&#39; records in an organized format.
+You could mind your own business, but oddly enough, &lt;span class=&quot;choices&quot;&gt;[[the app sounds like it could be a helpful tool for you|QC Navigate]]&lt;/span&gt;.&lt;/p&gt;]</tw-passagedata><tw-passagedata pid="18" name="QC Navigate" tags="" position="296,1707" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/StudentLife/services/Documents/QCNavigate/QC_Navigate12.jpg&quot; alt=&quot;Students using QC Navigate application&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;A holistic desktop and mobile app, &lt;a href=&quot;https://qc-cuny.navigate.eab.com/app/#/authentication/remote/&quot; target=&quot;_blank&quot;&gt;QC Navigate&lt;/a&gt; is connected to students&#39; CUNYFirst accounts and presents users&#39; records in an organized format.
 
 Scheduling appointments with advisors and FYE Peer Mentors is especially efficient because the app immediately arranges meetings, unlike sending emails and waiting for responses.
 
 In addition, QC Navigate facilitates communication between study buddies by allowing students of the same class to exchange email addresses and collaborate with one another.&lt;/p&gt;
 
-&lt;span class=&quot;choices&quot;&gt;[[You download QC Navigate]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="19" name="You download QC Navigate" tags="" position="290,1839" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+&lt;span class=&quot;choices&quot;&gt;[[You download QC Navigate]]&lt;/span&gt;.</tw-passagedata><tw-passagedata pid="19" name="You download QC Navigate" tags="" position="293,1830" size="100,100">&lt;p class=&quot;scenario&quot;&gt;With all of these resources on hand, you anticipate the rest of your first semester at &lt;span class=&quot;choices&quot;&gt;[[Queens College!|get C on English paper]]&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="20" name="get C on English paper" tags="" position="291,1989" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Before you know it, you have already made it to the middle of the term and have a good idea of where you stand in your classes. However, English class has taken up most of your time.
+
+You hope for the best as you and the rest of your classmates collect your graded persuasive essays.
+
+(transition:&quot;fade&quot;)+(transition-delay:8s)[A big, red C- bleeds through the top of your paper. You slide off the paperclip and skim through the sheets; your professor&#39;s comments fill the 1-inch margins. What do you do?&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;
+[[Do better next time]]
+[[Contact the The QC Writing Center]]
+[[Take advantage of office hours]]
+&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="21" name="Do better next time" tags="" position="136,2139" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Without a doubt, you&#39;re disappointed with your grade after all the effort you had put into this paper. However, that serves as motivation for you to do better on your next essay. Maybe then, that could improve your grade for English class.
+
+(transition:&quot;fade&quot;)+(transition-delay:4.5s)[However, for additional support, &lt;span class=&quot;choices&quot;&gt;[[the QC Writing Center|Contact the The QC Writing Center]]&lt;/span&gt; is available.]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="22" name="Contact the The QC Writing Center" tags="" position="281,2209" size="100,100">&lt;img src=&quot;https://i.imgur.com/Mi0TV93.png&quot; alt=&quot;QC Writing Center logo&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;&lt;a href=&quot;https://sites.google.com/qc.cuny.edu/qcwritingcenter/home&quot; target=&quot;_blank&quot;&gt;The QC Writing Center&lt;/a&gt; is an online service that collaborates with students to improve their writing skills. Writing consultants and tutors offer support on students&#39; writing concerns and clarity on their work.
+
+Students must share their work via Google Docs, and have official QC Google Education Suite and CUNY Zoom accounts.
+
+To make an appointment with a Consultant, you may use QC Navigate between 11AM-4PM on Monday-Thursday, 
+
+or for general inquiries, you may email &lt;a href = &quot;mailto: qc.writing.center@qc.cuny.edu&quot; class=&quot;email-format&quot; target=&quot;_blank&quot; class=&quot;email-format&quot;&gt;qc.writing.center@qc.cuny.edu&lt;a&gt;&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;[[What about tutoring for other subjects?|science/math tutoring with HSI-STEM]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="23" name="Take advantage of office hours" tags="" position="441,2139" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Every class, your professor reminds you that her office hours are open and beneficial for all. You finally take her up on the offer and slide your marked-up essay across the desk for her to review.
+
+Your professor explains that the mistakes you had made are actually quite common. With some grammatical corrections and tone clarification, you could potentially bump up your grade a little.
+
+(transition:&quot;fade&quot;)+(transition-delay:10s)[Good writing requires practice and diverse critics. Your professor refers you to &lt;span class=&quot;choices&quot;&gt;[[the QC Writing Center|Contact the The QC Writing Center]]&lt;/span&gt; for an extra push.&lt;/p&gt;]</tw-passagedata><tw-passagedata pid="24" name="science/math tutoring with HSI-STEM" tags="" position="281,2359" size="100,100">&lt;img src=&quot;https://i.imgur.com/Uj3Gf2z.png&quot; alt=&quot;HSI-STEM logo&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;In addition to the QC Writing Center, there are tutors available for nearly all science and math courses. Through &lt;a href=&quot;https://hsistem.qc.cuny.edu/about&quot; target=&quot;_blank&quot;&gt;HSI-STEM&lt;/a&gt;, Queens College students receive assistance during peer mentors&#39; office hours and formulate effective studying techniques.
+
+Before attending office hours via &lt;a href=&quot;https://us02web.zoom.us/j/89380305199#success&quot; target=&quot;_blank&quot;&gt;Zoom&lt;/a&gt;, make sure to check the &lt;a href=&quot;https://hsistem.qc.cuny.edu/learning-collectives/peers-office-hours&quot; target=&quot;_blank&quot;&gt;schedule&lt;/a&gt; for available slots.&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;[[You&#39;ll keep this in mind!|Writing English paper, need primary source?]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="25" name="Writing English paper, need primary source?" tags="" position="281,2509" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Some time has passed since your English paper was returned to you.
+
+(transition:&quot;fade&quot;)+(transition-delay:2s)[Your professor assigns the class the last major essay of the semester. It&#39;s imperative that you ace this paper to compensate for the C- on your first essay.]
+
+(transition:&quot;fade&quot;)+(transition-delay:6s)
+[&lt;img src=&quot;https://images.unsplash.com/photo-1504691342899-4d92b50853e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80&quot; alt=&quot;Laptop with document open&quot;&gt;
+
+Hunched over your desk, you type away at the keyboard, putting in 110% effort. You realize that to make your essay follow the professor&#39;s guidelines, you need to use primary sources.&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;
+[[Use Google]]
+[[Check the library]]
+&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="26" name="Use Google" tags="" position="128,2658" size="100,100">&lt;p class=&quot;scenario&quot;&gt;You can get anything and everything with Google! There&#39;s even a handful of articles that focus on your essay&#39;s topic. However, it is difficult to determine how accurate Google results are.
+
+A more reputable resource to find primary sources is &lt;span class=&quot;choices&quot;&gt;[[the library|Check the library]]&lt;/span&gt;.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="27" name="Check the library" tags="" position="422,2662" size="100,100">&lt;img src=&quot;https://library.qc.cuny.edu/wp-content/uploads/2021/04/clock_tower_300px.png&quot; alt=&quot;Library on Queens College campus&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;&lt;a href=&quot;https://library.qc.cuny.edu/&quot; target=&quot;_blank&quot;&gt;The Queens College Library&lt;/a&gt; is located in the &#39;&#39;Benjamin S. Rosenthal Building&#39;&#39;, providing students with free computer usage, book loans, and extensive research tools.
+
+When students enter their CUNYFirst credentials, they are granted free access to various databases— including &lt;a href=&quot;https://qc-cuny.libguides.com/az.php&quot; target=&quot;_blank&quot;&gt;JSTOR, Gale, and more!&lt;/a&gt;
+
+You may email &lt;a href = &quot;mailto: questions@qc-cuny.libanswers.com&quot; class=&quot;email-format&quot; target=&quot;_blank&quot; class=&quot;email-format&quot;&gt;questions@qc-cuny.libanswers.com&lt;/a&gt;
+or &lt;a href=&quot;https://library.qc.cuny.edu/services/research/ask-us/&quot; target=&quot;_blank&quot;&gt;chat online&lt;/a&gt;
+or pay a visit between 9AM-5PM on weekdays.
+&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;[[Turn in my essay|Interested in major/minor?]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="28" name="Interested in major/minor?" tags="" position="290,2825" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Time flies by fast! It&#39;s safe to say that you have a few tools under your QC belt— and none of them have rusted!
+
+You have heard announcements about different career opportunities on campus. Some call out to you more than others, and they have allowed you to dabble in some potential paths. You have an idea of what you would like to major in, and perhaps even minor in.
+
+However, you need to do more research on your options.&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;
+[[Receive academic advisement]]
+[[Check college bulletin]]
+(set: $lastVisited to &quot;Interested in major/minor?&quot;)[[Discuss with FYE Peer Mentor|Study with FYE Mentor]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="29" name="Receive academic advisement" tags="" position="139,2957" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/Academics/SupportPrograms/advising/PublishingImages/advising-center-qc.jpg&quot; alt=&quot;Academic Advising Center at Queens College&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;The Academic Advising Center occupies room 217 of Queens College&#39;s &#39;&#39;Kiely Hall&#39;&#39;.
+
+Its goal is to address academic concerns and provide students with blueprints of their educational career.
+
+You may email &lt;a href = &quot;mailto: advising@qc.cuny.edu&quot; class=&quot;email-format&quot; target=&quot;_blank&quot;&gt;advising@qc.cuny.edu&lt;/a&gt;
+or &lt;a href=&quot;https://chat.qc.cuny.edu/UserForm.aspx?busy=true&amp;deptid=18&amp;userid=&quot; target=&quot;_blank&quot;&gt;chat online&lt;/a&gt; 
+or request an appointment via QC Navigate.&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;[[You&#39;ll keep this in mind!|Major Declaration Form]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="30" name="Check college bulletin" tags="" position="425,2970" size="100,100">&lt;p class=&quot;scenario&quot;&gt;The lengthy yet handy bulletin details majors and minors offered at Queens College, along with respective courses and electives. Updated every academic year, an &lt;a href=&quot;https://www.qc.cuny.edu/Academics/Pages/CollegeBulletins.aspx&quot; target=&quot;_blank&quot;&gt;archive&lt;/a&gt; exists for all students to view.&lt;/p&gt;
+
+(transition:&quot;fade&quot;)+(transition-delay:4s)[&lt;span class=&quot;choices&quot;&gt;[[You&#39;ll keep this in mind!|Major Declaration Form]]&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="31" name="Major Declaration Form" tags="" position="303,3149" size="100,100">&lt;p class=&quot;scenario&quot;&gt;Whenever you&#39;re ready, simply fill out and submit the &lt;a href= &quot;https://www.qc.cuny.edu/registrar/Documents/Declaration%20of%20Major%20Form%20Fillable.pdf&quot; target=&quot;_blank&quot;&gt;Major Declaration Form!&lt;/a&gt;
+
+(transition:&quot;fade&quot;)+(transition-delay:3s)[As the term wraps up, you and your classmate Rafael discuss about which classes are being offered next semester. You honestly haven&#39;t put much thought into it— you&#39;ve been so occupied with your current classes. 
+
+As Rafael complains about first year-students drawing the short straw during registration, you tune him out and begin planning for next semester.
+
+How will you prepare for registration?&lt;/p&gt;
+
+&lt;span class=&quot;choices&quot;&gt;
+[[Check DegreeWorks]]
+(set: $lastVisited to &quot;Major Declaration Form&quot;)[[Meet with FYE Peer Mentor|Study with FYE Mentor]]
+&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="32" name="Check DegreeWorks" tags="" position="205,3305" size="100,100">&lt;img src=&quot;https://www.qc.cuny.edu/Academics/SupportPrograms/advising/PublishingImages/DegreeWorks%20View.PNG&quot; alt=&quot;DegreeWorks website&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;Essential for all college students, &lt;a href=&quot;https://degreeworks.cuny.edu/Dashboard_qc/dashboard&quot; target=&quot;_blank&quot;&gt;DegreeWorks&lt;/a&gt; is a certified website that documents students&#39; credits, required courses, and grades. In addition, users may access their financial aid information and even search for courses offered in other CUNY schools. 
+
+You take advantage of this, having DegreeWorks in one browser window and your &lt;span class=&quot;choices&quot;&gt;[[CUNYFirst Enrollment Shopping Cart|Enrollment]]&lt;/span&gt; in another. 
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="33" name="Enrollment" tags="" position="322,3532" size="100,100">&lt;p class=&quot;scenario&quot;&gt;When you&#39;re satisfied with the classes in your enrollment shopping cart, you wait around until your enrollment date (and time— Rafael had advised that you register exactly on the dot; otherwise you&#39;ll be left with crumbs).
+
+1. Log into &lt;a href=&quot;https://cunyfirst.cuny.edu/&quot; target=&quot;_blank&quot;&gt;CUNYFirst&lt;/a&gt; with your credentials
+2. Click &#39;&#39;Student Center&#39;&#39;
+3. Under //Academics//, click &#39;&#39;Enroll&#39;&#39;
+4. Select the appropriate term
+5. &lt;span class=&quot;choices&quot;&gt;[[Confirm your classes in your shopping cart|End]]&lt;/span&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="34" name="End" tags="" position="322,3682" size="100,100">&lt;img src=&quot;https://qccommunity.qc.cuny.edu/image/qcf_images/ContactUs_img.jpg&quot; alt=&quot;Queens College campus&quot;&gt;
+
+&lt;p class=&quot;scenario&quot;&gt;You&#39;re now set for next semester! 
+
+Your first semester has been a tremendous learning experience for you— thanks to faculty, classmates, and resources you picked up along the way. You make sure to utilize them in the next semesters to come.
+
+(transition:&quot;fade&quot;)+(transition-delay:7s)[Good luck on the rest of your journey in Queens College!&lt;/p&gt;]
+
+(transition:&quot;fade&quot;)+(transition-delay:9s)[&lt;span class=&quot;choices&quot;&gt;[[Play again|How to find student charges and make payment?]]&lt;/span&gt;]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
