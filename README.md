@@ -1,12 +1,12 @@
 # FYE-Game
 
-<img src='Queens_College.jpeg' title='Queens College Campus' width='50%' alt='Queens College Campus' />
+<img src='game_cover.jpeg' title='Queens College Campus' width='50%' alt='Queens College Campus' />
 
-**First Year Experience Simulator** is a text-simulator game hosted on Queens College's [First Year Experience website](https://fye.qc.cuny.edu/). Players, or first year-students, get to learn about the school's resources and interact with the campus.
+**First Year Experience Simulator** is a text-based choose-your-own-adventure game hosted on Queens College's [First Year Experience website](http://fye.qc.cuny.edu/fye-simulator-game/) and [itch.io](https://fyioffice.itch.io/fyesimulator). Players, or first year-students, get to explore common first year-struggles and navigate through Queens College campus.
 
 ## Software
 
-Developed with [Twine](https://twinery.org/)
+Developed with [Twine](https://twinery.org/), use of HTML, CSS, JavaScript (Harlowe 3.2.0)
 
 ## Collaborators
 
